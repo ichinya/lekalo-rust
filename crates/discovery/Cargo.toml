@@ -8,5 +8,14 @@ repository = "https://github.com/ichinya/lekalo-rust"
 publish = false
 
 [dependencies]
+serde_json = "1.0"
 
 [workspace]
+
+[profile.dev]
+debug = 0
+incremental = false
+
+[profile.test]
+debug = 0
+incremental = false
