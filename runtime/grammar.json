@@ -1,0 +1,13 @@
+{
+  "id": "lekalo-rust",
+  "version": "0.2.0",
+  "grammars": [
+    {
+      "file": "tree-sitter-rust.wasm",
+      "extensions": [
+        ".rs"
+      ],
+      "declarations": "(function_item name: (identifier) @function)\n(struct_item name: (type_identifier) @struct)\n(enum_item name: (type_identifier) @enum)\n(trait_item name: (type_identifier) @trait)"
+    }
+  ]
+}
