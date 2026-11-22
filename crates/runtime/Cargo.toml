@@ -1,0 +1,24 @@
+[package]
+name = "lekalo-rust-check"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.89.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ichinya/lekalo-rust"
+publish = false
+
+[workspace]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tree-sitter = "=0.25.10"
+tree-sitter-rust = "=0.24.0"
+
+[profile.dev]
+debug = 0
+incremental = false
+
+[profile.test]
+debug = 0
+incremental = false
